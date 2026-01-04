@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSS Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>XSS Vulnerability Scanner</h1>
+        <form action="/scan" method="POST">
+            <input type="text" name="url" placeholder="Enter target URL" required>
+            <button type="submit">Scan</button>
+        </form>
+    </div>
+</body>
+</html>
